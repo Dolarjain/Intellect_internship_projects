@@ -23,8 +23,12 @@ class user_difine_stack_oprations:
     
     def display_stack(self):
         print("\n-----> UPDATED STACK : \n")
-        for x in self.initial_stack:
+        
+        for x in reversed(self.initial_stack): #this line will reverse the stack and print values reversed
             print(" ",x)
+            
+#         for x in self.initial_stack:
+#             print(" ",x)
     
     def pop_element(self,enter):
         self.enter=enter
